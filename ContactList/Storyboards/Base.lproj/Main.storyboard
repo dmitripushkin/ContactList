@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M8l-Ua-is9">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,14 +18,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactID" textLabel="rpJ-gL-elD" style="IBUITableViewCellStyleDefault" id="JkG-nX-ZXl">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JkG-nX-ZXl" id="nkg-IO-iko">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rpJ-gL-elD">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                             <nil key="textColor"/>
@@ -56,14 +56,56 @@
                     <view key="view" contentMode="scaleToFill" id="Zjb-BQ-AIb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="E86-0T-koU">
+                                <rect key="frame" x="20" y="140" width="374" height="36"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="vh6-2S-s2F">
+                                <rect key="frame" x="20" y="226" width="374" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone: 123-45-67" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lNI-GE-g6K">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: name@yandex.ru" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jXa-sE-b4r">
+                                        <rect key="frame" x="0.0" y="41" width="374" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QYK-sz-Fgs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QYK-sz-Fgs" firstAttribute="trailing" secondItem="vh6-2S-s2F" secondAttribute="trailing" constant="20" id="7RF-MS-Wl2"/>
+                            <constraint firstItem="E86-0T-koU" firstAttribute="leading" secondItem="QYK-sz-Fgs" secondAttribute="leading" constant="20" id="UUN-hu-UyF"/>
+                            <constraint firstItem="vh6-2S-s2F" firstAttribute="leading" secondItem="QYK-sz-Fgs" secondAttribute="leading" constant="20" id="Yyd-Br-jpb"/>
+                            <constraint firstItem="QYK-sz-Fgs" firstAttribute="trailing" secondItem="E86-0T-koU" secondAttribute="trailing" constant="20" id="aZW-Et-9Pt"/>
+                            <constraint firstItem="vh6-2S-s2F" firstAttribute="width" secondItem="E86-0T-koU" secondAttribute="width" id="oYm-wu-1yw"/>
+                            <constraint firstItem="vh6-2S-s2F" firstAttribute="top" secondItem="E86-0T-koU" secondAttribute="bottom" constant="75" id="rvY-YS-LC3">
+                                <variation key="heightClass=regular-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="E86-0T-koU" firstAttribute="top" secondItem="QYK-sz-Fgs" secondAttribute="top" id="ttT-k9-9GE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hIr-5F-ZC4"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="jXa-sE-b4r" id="nm6-z0-f67"/>
+                        <outlet property="fullNameLabel" destination="E86-0T-koU" id="YQD-a8-QiM"/>
+                        <outlet property="phoneNumLabel" destination="lNI-GE-g6K" id="T2i-TB-HRl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sl9-EO-KYB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1316" y="78"/>
+            <point key="canvasLocation" x="1314.4927536231885" y="77.678571428571431"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bbd-pB-tQT">
@@ -85,6 +127,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
