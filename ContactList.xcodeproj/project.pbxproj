@@ -15,6 +15,7 @@
 		BF64B00426E7C0BE00E7C9F5 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64B00326E7C0BE00E7C9F5 /* ContactViewController.swift */; };
 		BF64B00A26E7C3E900E7C9F5 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64B00926E7C3E900E7C9F5 /* Contact.swift */; };
 		BF64B00C26E7D8D800E7C9F5 /* ContactDitailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64B00B26E7D8D800E7C9F5 /* ContactDitailViewController.swift */; };
+		BF64B00E26E7E0C100E7C9F5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64B00D26E7E0C100E7C9F5 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BF64B00326E7C0BE00E7C9F5 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		BF64B00926E7C3E900E7C9F5 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		BF64B00B26E7D8D800E7C9F5 /* ContactDitailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDitailViewController.swift; sourceTree = "<group>"; };
+		BF64B00D26E7E0C100E7C9F5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				BF64B00526E7C0D500E7C9F5 /* ViewControllers */,
 				BF64B00826E7C16600E7C9F5 /* Models */,
+				BF64B00F26E7E0D200E7C9F5 /* Data */,
 				BF64B00026E79C6200E7C9F5 /* Storyboards */,
 				BF64B00126E79CA800E7C9F5 /* App */,
 				BF64B00226E79CD400E7C9F5 /* Resources */,
@@ -111,6 +114,14 @@
 				BF64B00926E7C3E900E7C9F5 /* Contact.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BF64B00F26E7E0D200E7C9F5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BF64B00D26E7E0C100E7C9F5 /* DataManager.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF64B00C26E7D8D800E7C9F5 /* ContactDitailViewController.swift in Sources */,
+				BF64B00E26E7E0C100E7C9F5 /* DataManager.swift in Sources */,
 				BF64B00A26E7C3E900E7C9F5 /* Contact.swift in Sources */,
 				BF64AFED26E79C2000E7C9F5 /* AppDelegate.swift in Sources */,
 				BF64AFEF26E79C2000E7C9F5 /* SceneDelegate.swift in Sources */,
