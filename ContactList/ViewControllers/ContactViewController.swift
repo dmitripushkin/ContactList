@@ -11,12 +11,6 @@ class ContactViewController: UITableViewController {
     
     private var contactList = Contact.getContactList()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-
-    }
-
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         contactList.count
@@ -36,8 +30,10 @@ class ContactViewController: UITableViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+        guard let contactDitailVC = segue.destination as? ContactDitailViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        
+        let contact = contactList[indexPath.row]
+        contactDitailVC.contact = contact
     }
-    
-
 }

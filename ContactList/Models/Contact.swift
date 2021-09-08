@@ -6,24 +6,42 @@
 //
 
 struct Contact {
+    
+    // MARK: - Properties
     let name: String
     let surname: String
+    let phone: String
+    let email: String
+    
     
     var fullName: String {
         "\(name) \(surname)"
     }
     
+    // MARK: - Methods
     static func getContactList() -> [Contact] {
-        [
-            Contact(name: "Ivan", surname: "Grozni"),
-            Contact(name: "Ivan", surname: "Kalita"),
-            Contact(name: "Dmitri", surname: "Donskoi"),
-            Contact(name: "Alex", surname: "Nevski"),
-            Contact(name: "Petr", surname: "Romanov"),
-            Contact(name: "Alex", surname: "Suvorov"),
-            Contact(name: "Vlad", surname: "Monomach"),
-            Contact(name: "Uri", surname: "Dolgorooki"),
-            
-        ]
+    
+        var contactsData: [Contact] = []
+        
+        let data = DataManager()
+        
+        for _ in 1...8 {
+            let contact = Contact (
+                name: data.getRandomName(),
+                surname: data.getRandomSurname(),
+                phone: data.getRandomCellPhoneNum(),
+                email: data.getRandomEmail()
+            )
+            /*
+             здесь я не смог реализовать проверку параметров создаваемого
+             экземпляра структуры перед добавлением его в массив.
+             
+             
+             if contact.name != параметру name всех элементов массива contactsData
+             как это сделать?)
+             */
+            contactsData.append(contact)
+            }
+        return contactsData
     }
 }
